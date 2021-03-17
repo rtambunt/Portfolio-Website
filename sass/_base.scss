@@ -1,0 +1,30 @@
+:root {
+  // COLORS
+  --color-grey-dark: rgb(49, 49, 49);
+
+  // FONt
+  --font-noto-jp: "Noto Sans JP";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  font-family: var(--font-noto-jp);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-grey-dark);
+}

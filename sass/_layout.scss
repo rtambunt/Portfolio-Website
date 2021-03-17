@@ -1,0 +1,10 @@
+.header {
+  a {
+    text-decoration: none;
+    color: var(--color-grey-dark);
+  }
+
+  &__nav-bar {
+    list-style: none;
+  }
+}
