@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtambunt/portfolio-website.git"
+  },
+  "author": "Robbie Tambunting",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtambunt/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/rtambunt/portfolio-website#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
