@@ -1,5 +1,6 @@
 :root {
   --color-grey-dark: rgb(49, 49, 49);
+  --color-grey-light: rgb(168, 168, 168);
   --font-noto-jp: "Noto Sans JP"; }
 
 * {
@@ -21,15 +22,34 @@ body {
   line-height: 1.5;
   color: var(--color-grey-dark); }
 
-.header a {
-  text-decoration: none;
-  color: var(--color-grey-dark); }
-
-.header__logo {
-  font-size: 2.2rem;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.header__nav-bar {
-  font-size: 1.6rem;
-  list-style: none; }
+.header {
+  padding: 5rem 8rem 4rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-grey-dark);
+    text-decoration: none; }
+  .header__nav-bar {
+    font-size: 1.6rem;
+    list-style: none;
+    margin-right: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6rem; }
+    .header__nav-bar a {
+      padding-bottom: 0.2rem;
+      text-decoration: none;
+      color: var(--color-grey-light);
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s; }
+    .header__nav-bar a:hover {
+      color: var(--color-grey-dark);
+      border-bottom: 2px solid var(--color-grey-dark); }
