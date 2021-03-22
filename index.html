@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
 
@@ -16,25 +19,42 @@
     <header class="header">
       <a href="#" class="header__logo">Robbie Tambunting</a>
       <ul class="header__nav-bar">
-        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
         <li><a href="#">Work</a></li>
       </ul>
     </header>
 
     <section class="hero">
-      <div class="hero__container"><h3>Hello! My name is</h2>
+      <div class="hero__container">
+        <h3>Hello! My name is</h3>
         <h1 class="name">Robbie Tambunting</h1>
         <h2>Front End Web Developer</h2>
         <div>
           <a href="mailto:gtambunt@gmail.com" class="btn">Contact Me!</a>
         </div>
         <div>
-          <a href="#">
-            <ion-icon name="chevron-down-outline" class="hero__down-arrow"></ion-icon>
-          </a> 
+          <a href="#skills">
+            <ion-icon
+              name="chevron-down-outline"
+              class="hero__down-arrow"
+            ></ion-icon>
+          </a>
         </div>
       </div>
     </section>
+
+    <section id="skills" class="skills">
+      <h3 class="title">Languages and Tools</h3>
+      <ul class="skills__list">
+        <li class="skills__list--skill">HTML5</li>
+        <li class="skills__list--skill">CSS3</li>
+        <li class="skills__list--skill">Sass</li>
+        <li class="skills__list--skill">Javascript</li>
+        <li class="skills__list--skill">Github</li>
+        <li class="skills__list--skill">Chrome Dev Tools</li>
+      </ul>
+    </section>
+
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </body>
 </html>

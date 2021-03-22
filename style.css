@@ -1,6 +1,7 @@
 :root {
   --color-grey-dark: rgb(49, 49, 49);
-  --color-grey-light: rgb(168, 168, 168);
+  --color-grey-light-1: rgb(168, 168, 168);
+  --color-grey-light-2: rgb(247, 245, 245);
   --font-noto-jp: "Noto Sans JP"; }
 
 * {
@@ -27,7 +28,20 @@ body {
   color: var(--color-grey-dark);
   border: 1px solid var(--color-grey-dark);
   padding: 1.5rem 2.5rem;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s; }
+  .btn:focus {
+    outline: none; }
+  .btn:hover {
+    background-color: var(--color-grey-dark);
+    color: var(--color-grey-light-2); }
+
+.title {
+  font-size: 2.1rem; }
 
 .header {
   padding: 4.5rem 8rem 2rem 6rem;
@@ -50,7 +64,7 @@ body {
     .header__nav-bar a {
       padding-bottom: 0.2rem;
       text-decoration: none;
-      color: var(--color-grey-light);
+      color: var(--color-grey-light-1);
       border-bottom: 2px solid transparent;
       transition: all 0.2s;
       -webkit-transition: all 0.2s;
@@ -62,7 +76,6 @@ body {
       border-bottom: 2px solid var(--color-grey-dark); }
 
 .hero {
-  background-color: #e0e0e0;
   height: calc(100vh - 9.8rem);
   text-align: center;
   letter-spacing: 0.3rem;
@@ -72,7 +85,8 @@ body {
   align-items: center; }
   .hero__container {
     position: relative;
-    height: 100%; }
+    height: 100%;
+    padding-top: 8rem; }
   .hero h1 {
     font-size: 6.5rem;
     font-weight: 400;
@@ -97,3 +111,28 @@ body {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%); }
+
+.skills {
+  padding: 10rem 8rem; }
+  .skills__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 2rem;
+    justify-items: center;
+    margin-top: 7rem;
+    list-style: none; }
+    .skills__list--skill {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: 700;
+      width: 11rem;
+      height: 11rem;
+      border: 2px solid var(--color-grey-dark);
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%; }
